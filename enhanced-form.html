@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced Form Example</h1>
+    <p>This page demonstrates a well-structured HTML document with lists, tables, media, and an accessible HTML5 form.</p>
+  </header>
+
+  <main>
+    <!-- List -->
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript (ES6+)</li>
+    </ul>
+
+    <!-- Table -->
+    <h2>Technology Comparison Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Purpose</th>
+          <th>Example Use</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Structure</td>
+          <td>Building web pages</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Styling</td>
+          <td>Adding design and layout</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Interactivity</td>
+          <td>Dynamic effects</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Media -->
+    <h2>Media Example</h2>
+    <img src="https://via.placeholder.com/300x150" alt="Placeholder image">
+    <p>A sample placeholder image</p>
+
+    <!-- HTML5 Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      
+      <!-- Name -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <!-- Gender -->
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+      <br><br>
+
+      <!-- Skills -->
+      <label for="skills">Select your skills:</label><br>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript">
+      <label for="js">JavaScript</label>
+      <br><br>
+
+      <!-- Country -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select--</option>
+        <option value="ng">Nigeria</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+      <br><br>
+
+      <!-- Readonly Field -->
+      <label for="refcode">Referral Code:</label>
+      <input type="text" id="refcode" name="refcode" value="AUTO123" readonly><br><br>
+
+      <!-- Message -->
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea><br><br>
+
+      <!-- File Upload -->
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" required><br><br>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Form">
+    </form>
+  </main>
+
+</body>
+</html>
