@@ -1,44 +1,52 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ew7e64j9)
-# 📘 Assignment: Enhancing HTML5 Content & Mastering Forms
+# Python List Operations 🐍
 
-## Overview
+This project demonstrates basic **list manipulation** in Python, including:
+- Appending elements
+- Inserting at a specific position
+- Extending a list
+- Removing elements
+- Sorting
+- Finding the index of a specific value
 
-This assignment focuses on elevating your HTML5 skills by working with advanced content elements and mastering the creation, structure, and validation of web forms. You will practice using lists, tables, and media to enrich page content, and then dive deep into building dynamic, user-friendly forms powered by native HTML5 features.
+---
 
-## Objectives
+## Steps Performed
 
-You are expected to demonstrate the ability to:
+1. Create an empty list called `my_list`.
+2. Append the values `10`, `20`, `30`, and `40` to the list.
+3. Insert `15` at the **second position**.
+4. Extend the list with another list: `[50, 60, 70]`.
+5. Remove the **last element** from the list.
+6. Sort the list in ascending order.
+7. Find and print the **index** of the value `30`.
 
-* Use lists and tables effectively to organize content for clarity and accessibility.
-* Embed media content such as images, audio, or video using semantic HTML5 elements.
-* Build structured HTML5 forms that are both usable and visually intuitive.
-* Apply various HTML5 form attributes to improve user interaction.
-* Use built-in validation techniques to minimize incorrect data input without relying on JavaScript.
+---
 
-## Instructions
+## Code Example
 
-Design a simple multi-section web page that showcases the use of lists, tables, and media, followed by a complete HTML5 form. The page should reflect thoughtful structure, usability, and clarity.
+```python
+# Create an empty list
+my_list = []
 
-Your form should include various input types, make use of labels and fieldsets for accessibility, and apply HTML5 validation rules through attributes like `required`, `type`, `minlength`, `pattern`, and others.
+# Append elements
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
 
-Avoid using JavaScript for validation—rely solely on native HTML5 capabilities.
+# Insert at index 1
+my_list.insert(1, 15)
 
-## Deliverables
+# Extend with another list
+my_list.extend([50, 60, 70])
 
-Submit a single HTML file named `enhanced-form.html`. It should include:
+# Remove last element
+my_list.pop()
 
-* Well-structured content using lists, tables, and media.
-* A complete HTML5 form including a variety of input fields.
-* Correct use of form attributes such as `placeholder`, `required`, `autocomplete`, and `readonly`.
-* HTML5 validation features implemented correctly across all relevant fields.
-* A clear, accessible layout using semantic tags.
+# Sort the list
+my_list.sort()
 
-## Tips
-
-* Proper and meaningful use of lists, tables, and media.
-* Clarity and accessibility of form structure.
-* Correct use of form elements and attributes.
-* Effective application of native HTML5 validation.
-* Clean, well-indented, and maintainable HTML code.
-
-
+# Find index of 30
+index_of_30 = my_list.index(30)
+print("Index of 30:", index_of_30)
+print("Final List:", my_list)
